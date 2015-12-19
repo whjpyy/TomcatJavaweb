@@ -8,19 +8,57 @@
     <name>tomcat-javaweb Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>
-        <dependency>
+<!--        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>3.8.1</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
+        </dependency>-->
+        <!--<dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
             <version>2.5</version>
         </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.1</version>
+        </dependency>-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>javax.servlet.jsp-api</artifactId>
+            <version>2.2.1</version>
+        </dependency>
     </dependencies>
+
     <build>
         <finalName>tomcat-javaweb</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.cargo</groupId>
+                <artifactId>cargo-maven2-plugin</artifactId>
+                <version>1.4.17</version>
+                <configuration>
+                    <container>
+                        <containerId>tomcat8x</containerId>
+                        <type>remote</type>
+                    </container>
+                    <configuration>
+                        <type>runtime</type>
+                        <properties>
+                            <!-- 我的Ubantu本地虚拟机 -->
+                            <cargo.remote.username>tomcat</cargo.remote.username>
+                            <cargo.remote.password>123456</cargo.remote.password>
+                            <cargo.remote.uri>http://192.168.56.101/manager/text</cargo.remote.uri>
+                        </properties>
+                    </configuration>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 </project>
