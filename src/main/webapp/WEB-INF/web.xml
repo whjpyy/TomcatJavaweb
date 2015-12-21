@@ -4,13 +4,79 @@
 
 <web-app>
     <display-name>Archetype Created Web Application</display-name>
+    <context-param>
+        <param-name>email</param-name>
+        <param-value>409121961@qq.com</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>com.chen.learn.ch04.MyServletContextListener</listener-class>
+    </listener>
+    
     <servlet>
         <servlet-name>dispacher</servlet-name>
         <servlet-class>com.chen.learn.ch03.DispacherServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>requestInfo</servlet-name>
+        <servlet-class>com.chen.learn.ch04.RequestInfoServelt</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>font</servlet-name>
+        <servlet-class>com.chen.learn.ch04.FontServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>context</servlet-name>
+        <servlet-class>com.chen.learn.ch04.ContextTesterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>lifeInit</servlet-name>
+        <servlet-class>com.chen.learn.ch04.LifeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>counter</servlet-name>
+        <servlet-class>com.chen.learn.ch04.CounterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>excep</servlet-name>
+        <servlet-class>com.chen.learn.ch04.ExceptionTesterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>quesiton</servlet-name>
+        <servlet-class>com.chen.learn.ch04.QuestionServlet</servlet-class>
+    </servlet>
+    
     <servlet-mapping>
         <servlet-name>dispacher</servlet-name>
         <url-pattern>/dispacher</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>requestInfo</servlet-name>
+        <url-pattern>/info</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>font</servlet-name>
+        <url-pattern>/font</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>context</servlet-name>
+        <url-pattern>/context</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>lifeInit</servlet-name>
+        <url-pattern>/life</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>counter</servlet-name>
+        <url-pattern>/counter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>excep</servlet-name>
+        <url-pattern>/excep</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>quesiton</servlet-name>
+        <url-pattern>/question</url-pattern>
     </servlet-mapping>
     
     <taglib>
@@ -18,6 +84,5 @@
         <taglib-location>/WEB-INF/mytaglib.tld</taglib-location>
     </taglib>
 
-    <!-- 中文乱码处理 -->
 
 </web-app>
