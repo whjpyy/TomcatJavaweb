@@ -45,6 +45,42 @@
         <servlet-name>quesiton</servlet-name>
         <servlet-class>com.chen.learn.ch04.QuestionServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>download</servlet-name>
+        <servlet-class>com.chen.learn.ch05.DownloadServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>upload</servlet-name>
+        <servlet-class>com.chen.learn.ch05.UploadServlet</servlet-class>
+        <init-param>
+            <param-name>filePath</param-name>
+            <param-value>/WEB-INF/classes/ch05</param-value>
+        </init-param>
+        <init-param>
+            <param-name>tempFilePath</param-name>
+            <param-value>/WEB-INF/classes/ch05</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>image</servlet-name>
+        <servlet-class>com.chen.learn.ch05.ImageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>cookie</servlet-name>
+        <servlet-class>com.chen.learn.ch05.CookieServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>main</servlet-name>
+        <servlet-class>com.chen.learn.ch05.MainServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>greet</servlet-name>
+        <servlet-class>com.chen.learn.ch05.GreetServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>concurrent</servlet-name>
+        <servlet-class>com.chen.learn.ch05.ConcurrentServlet</servlet-class>
+    </servlet>
     
     <servlet-mapping>
         <servlet-name>dispacher</servlet-name>
@@ -78,6 +114,35 @@
         <servlet-name>quesiton</servlet-name>
         <url-pattern>/question</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>download</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>upload</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>image</servlet-name>
+        <url-pattern>/image</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>cookie</servlet-name>
+        <url-pattern>/cookie</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>main</servlet-name>
+        <url-pattern>/main</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>greet</servlet-name>
+        <url-pattern>/greet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>concurrent</servlet-name>
+        <url-pattern>/concurrent</url-pattern>
+    </servlet-mapping>
+    
     
     <taglib>
         <taglib-uri>/mytaglib</taglib-uri>
