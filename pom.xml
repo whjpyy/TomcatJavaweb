@@ -7,6 +7,11 @@
     <version>1.0-SNAPSHOT</version>
     <name>tomcat-javaweb Maven Webapp</name>
     <url>http://maven.apache.org</url>
+
+    <properties>
+        <java.home>D:\Work\Java\jdk1.7.0_71</java.home>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -28,6 +33,18 @@
     <build>
         <finalName>tomcat-javaweb</finalName>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <compilerArguments>
+                        <verbose />
+                        <bootclasspath>${java.home}\jre\lib\rt.jar;${java.home}\jre\lib\jce.jar</bootclasspath>
+                    </compilerArguments>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.codehaus.cargo</groupId>
                 <artifactId>cargo-maven2-plugin</artifactId>

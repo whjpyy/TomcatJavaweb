@@ -7,6 +7,16 @@
 <h2>Hello World</h2>
 
 <div>
+    <h1>ch06 JSP技术</h1>
+    <ol>
+        <li><a href="/page/ch06/hitCounter.jsp">JSP声明</a></li>
+        <li><a href="/page/ch06/source.jsp">请求转发</a></li>
+        <li><a href="/page/ch06/sin.jsp">静态包含()</a></li>
+        <li><a href="/page/ch06/din.jsp">动态包含(jsp:include)</a></li>
+        <li><a href="/page/ch06/index.jsp">静态包含和动态包含混合使用</a></li>
+    </ol>
+</div>
+<div>
     <h1>ch05 Servlet技术(下)</h1>
     <ol>
         <li><a href="/page/ch05/upload.html">跳转到上传页面页面</a></li>
