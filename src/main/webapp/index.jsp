@@ -7,6 +7,31 @@
 <h2>Hello World</h2>
 
 <div>
+    <h1>ch09 会话机制</h1>
+    <ol>
+        <li><a href="/page/ch09/sessionid.jsp">打印保存在客户端的所有Cookie</a></li>
+        <li><a href="/page/ch09/maillogin.jsp">使用JSP会话的范例</a></li>
+        <li><a href="/page/ch09/sessionopt.jsp">会话的监听</a></li>
+        <!--
+         1.b 2.abd 3.ad 4.abc 5.c 6.acd 7.abc 8.acd 9.b
+         10.c 11.b
+         正确答案：1.c 2.abd 3.acd 4.ac 5.c 6.acd
+         7.abc 8.abc 9.b 10.d 11.bc
+         -->
+    </ol>
+</div>
+<div>
+    <h1>ch08 访问数据库</h1>
+    <ol>
+        <li><a href="/page/ch08/dbaccess.jsp">JDBC API</a></li>
+        <li><a href="/page/ch08/datasource.jsp">通过数据源访问数据库</a></li>
+        <li><a href="/page/ch08/paging.jsp">分页显示</a></li>
+        <!--
+         1.ab 2.bc 3.cd 4.d 5.bc 6.abc 7.abde 8.2
+         -->
+    </ol>
+</div>
+<div>
     <h1>ch06 JSP技术</h1>
     <ol>
         <li><a href="/page/ch06/hitCounter.jsp">JSP声明</a></li>

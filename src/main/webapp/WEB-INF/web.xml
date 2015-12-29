@@ -12,6 +12,9 @@
     <listener>
         <listener-class>com.chen.learn.ch04.MyServletContextListener</listener-class>
     </listener>
+    <listener>
+        <listener-class>com.chen.learn.ch09.MySessionLifeLinstener</listener-class>
+    </listener>
     
     <servlet>
         <servlet-name>dispacher</servlet-name>
@@ -148,6 +151,13 @@
         <taglib-uri>/mytaglib</taglib-uri>
         <taglib-location>/WEB-INF/mytaglib.tld</taglib-location>
     </taglib>
+
+    <!-- 声明对JNDI资源的引用 -->
+    <resource-ref>
+        <res-ref-name>jdbc/BookDB</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
 
 
 </web-app>
