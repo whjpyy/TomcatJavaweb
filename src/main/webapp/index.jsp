@@ -7,6 +7,19 @@
 <h2>Hello World</h2>
 
 <div>
+    <h1>ch10 JSP访问JavaBean</h1>
+    <ol>
+        <li><a href="/page/ch10/pageCounter1.jsp">JavaBean在页面(page)范围内</a></li>
+        <li><a href="/page/ch10/requestCounter1.jsp">JavaBean在页面(request)范围内</a></li>
+        <li><a href="/page/ch10/sessionCounter1.jsp">JavaBean在页面(session)范围内</a></li>
+        <li><a href="/page/ch10/applicationCounter1.jsp">JavaBean在页面(application)范围内</a></li>
+        <!--
+        1.c 2.bd 3.d 4.a 5.d 6.abd
+         正确答案：
+         -->
+    </ol>
+</div>
+<div>
     <h1>ch09 会话机制</h1>
     <ol>
         <li><a href="/page/ch09/sessionid.jsp">打印保存在客户端的所有Cookie</a></li>
