@@ -1,8 +1,7 @@
-<!DOCTYPE web-app PUBLIC
-        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
-        "http://java.sun.com/dtd/web-app_2_3.dtd" >
-
-<web-app>
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <!-- web2.4中el表达式默认开启 -->
     <display-name>Archetype Created Web Application</display-name>
     <context-param>
         <param-name>email</param-name>
@@ -15,7 +14,7 @@
     <listener>
         <listener-class>com.chen.learn.ch09.MySessionLifeLinstener</listener-class>
     </listener>
-    
+
     <servlet>
         <servlet-name>dispacher</servlet-name>
         <servlet-class>com.chen.learn.ch03.DispacherServlet</servlet-class>
@@ -84,7 +83,7 @@
         <servlet-name>concurrent</servlet-name>
         <servlet-class>com.chen.learn.ch05.ConcurrentServlet</servlet-class>
     </servlet>
-    
+
     <servlet-mapping>
         <servlet-name>dispacher</servlet-name>
         <url-pattern>/dispacher</url-pattern>
@@ -145,12 +144,20 @@
         <servlet-name>concurrent</servlet-name>
         <url-pattern>/concurrent</url-pattern>
     </servlet-mapping>
-    
-    
-    <taglib>
+
+    <jsp-config></jsp-config>
+    <!-- web2.3 -->
+    <!--<taglib>
         <taglib-uri>/mytaglib</taglib-uri>
         <taglib-location>/WEB-INF/mytaglib.tld</taglib-location>
-    </taglib>
+    </taglib>-->
+    <!-- web2.4 -->
+    <jsp-config>
+        <taglib>
+            <taglib-uri>/mytaglib</taglib-uri>
+            <taglib-location>/WEB-INF/mytaglib.tld</taglib-location>
+        </taglib>
+    </jsp-config>
 
     <!-- 声明对JNDI资源的引用 -->
     <resource-ref>

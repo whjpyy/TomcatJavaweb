@@ -7,6 +7,17 @@
 <h2>Hello World</h2>
 
 <div>
+    <h1>ch12 EL表达式语言</h1>
+    <ol>
+        <li><a href="/page/ch12/isempty.jsp">el empty</a></li>
+        <li><a href="/page/ch12/sum.jsp">定义和使用EL函数</a></li>
+        <!--
+        1.c 2.bd 3.d 4.a 5.d 6.abd
+         正确答案：
+         -->
+    </ol>
+</div>
+<div>
     <h1>ch10 JSP访问JavaBean</h1>
     <ol>
         <li><a href="/page/ch10/pageCounter1.jsp">JavaBean在页面(page)范围内</a></li>

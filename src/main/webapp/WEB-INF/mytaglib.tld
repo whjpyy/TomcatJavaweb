@@ -15,4 +15,20 @@
         <tag-class>com.chen.learn.ch03.HelloTag</tag-class>
         <body-content>empty</body-content>
     </tag>
+
+    <function>
+        <name>add</name>
+        <function-class>com.chen.learn.ch12.Tool</function-class>
+        <function-signature>
+            int add(java.lang.String,java.lang.String)
+        </function-signature>
+    </function>
+
+    <function>
+        <name>convert</name>
+        <function-class>com.chen.learn.ch12.Tool</function-class>
+        <function-signature>
+            java.lang.String convert(java.lang.String,java.lang.String,java.lang.String)
+        </function-signature>
+    </function>
 </taglib>
