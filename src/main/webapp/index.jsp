@@ -7,6 +7,17 @@
 <h2>Hello World</h2>
 
 <div>
+    <h1>ch13 自定义JSP标签</h1>
+    <ol>
+        <li><a href="/page/ch13/index.jsp">创建和使用message标签</a></li>
+        <li><a href="/page/ch13/iterate.jsp">创建和使用iterate标签</a></li>
+        <!--
+        1.c 2.bd 3.d 4.a 5.d 6.abd
+         正确答案：
+         -->
+    </ol>
+</div>
+<div>
     <h1>ch12 EL表达式语言</h1>
     <ol>
         <li><a href="/page/ch12/isempty.jsp">el empty</a></li>

@@ -16,6 +16,32 @@
         <body-content>empty</body-content>
     </tag>
 
+    <tag>
+        <name>message</name>
+        <tag-class>com.chen.learn.ch13.MessageTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>key</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+    
+    <tag>
+        <name>iterate</name>
+        <tag-class>com.chen.learn.ch13.IterateTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>false</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>items</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
     <function>
         <name>add</name>
         <function-class>com.chen.learn.ch12.Tool</function-class>
@@ -31,4 +57,6 @@
             java.lang.String convert(java.lang.String,java.lang.String,java.lang.String)
         </function-signature>
     </function>
+
+
 </taglib>
