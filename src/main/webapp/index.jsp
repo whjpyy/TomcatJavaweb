@@ -7,6 +7,18 @@
 <h2>Hello World</h2>
 
 <div>
+    <h1>ch15 JSTL标签库</h1>
+    <ol>
+        <li><a href="/page/ch15/sample.jsp">一般用途的标签</a></li>
+        <li><a href="/page/ch15/if.jsp">条件标签</a></li>
+        <li><a href="/page/ch15/iterator.jsp">遍历标签</a></li>
+    </ol>
+    <!--
+     1.bcd 2.b 3.b 4.d 5.a 6.b 7.c 8.d
+     -->
+</div>
+
+<div>
     <h1>ch13 自定义JSP标签</h1>
     <ol>
         <li><a href="/page/ch13/index.jsp">创建和使用message标签</a></li>
