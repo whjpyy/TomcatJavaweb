@@ -6,6 +6,17 @@
 <body>
 <h2>Hello World</h2>
 
+
+<div>
+    <h1>ch18 JSTL function标签库</h1>
+    <ol>
+        <li><a href="/page/ch18/function.jsp">18 function</a></li>
+    </ol>
+    <!--
+     1.acd 2.c 3.acd 4.abc 5.d 6.bc
+     -->
+</div>
+
 <div>
     <h1>ch17 SQL标签</h1>
     <ol>
