@@ -7,6 +7,29 @@
 <h2>Hello World</h2>
 
 <div>
+    <h1>ch17 SQL标签</h1>
+    <ol>
+        <li><a href="/page/ch17/query.jsp">17.2 &lt;sql:query&gt;</a></li>
+        <li><a href="/page/ch17/update.jsp">17.5 &lt;sql:update&gt;</a></li>
+    </ol>
+    <!--
+     1.acd 2.ab 3.c 4.c 5.abc 6.a
+     -->
+</div>
+
+<div>
+    <h1>ch16 I18N标签</h1>
+    <ol>
+        <li><a href="/page/ch16/locale.jsp">locale</a></li>
+        <li><a href="/page/ch16/i18n.jsp">16.3 国际化标签</a></li>
+        <li><a href="/page/ch16/format.jsp">16.5 格式化标签</a></li>
+    </ol>
+    <!--
+     1.bc 2.abd 3.a 4.b 5.b 6.c
+     -->
+</div>
+
+<div>
     <h1>ch15 JSTL标签库</h1>
     <ol>
         <li><a href="/page/ch15/sample.jsp">一般用途的标签</a></li>
